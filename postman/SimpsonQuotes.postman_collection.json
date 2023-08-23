@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "0dcc39fb-8e16-46af-b65d-834ac528d6bc",
+		"name": "SimpsonQuotes",
+		"description": "This is a very simple collection of endpoints for the Coding Challenge.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29234717"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "api_user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "api_pass",
+							"type": "text"
+						},
+						{
+							"key": "device_name",
+							"value": "api_demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Quotes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/simpsonsquotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"simpsonsquotes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
